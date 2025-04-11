@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "name": "Disease 1",
+    "description": [
+      "Paragraph 1 about Disease 1",
+      "Paragraph 2 about Disease 1",
+      "Paragraph 3 about Disease 1"
+    ],
+    "imageUrl": "/images/disease1.jpg"
+  }
+]
