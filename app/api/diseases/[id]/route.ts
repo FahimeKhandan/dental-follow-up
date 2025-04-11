@@ -1,10 +1,12 @@
 // app/api/diseases/route.ts
 import { NextResponse } from 'next/server';
 import { Disease } from '@/lib/models/Disease';
-import db from '@/lib/db';
+import '@/lib/db';
+import { connectDB } from '@/lib/db';
 
 export async function GET() {
     try {
+         await connectDB();
         const diseases = await Disease.find();
         console.log('Fetched diseases:', diseases);
         return NextResponse.json(diseases);
