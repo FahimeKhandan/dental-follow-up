@@ -38,8 +38,8 @@ export default function Home() {
         <div>
             <h1>Diseases</h1>
             <ul>
-                {diseases.map((disease: IDisease) => (
-                    <li key={disease._id} >
+                {diseases.map((disease) => (
+                    <li key={disease._id}>
                         <button onClick={() => handleDiseaseClick(disease._id)}>{disease.name}</button>
                     </li>
                 ))}
@@ -59,7 +59,7 @@ export default function Home() {
             {selectedDiseases.length > 0 && (
                 <div>
                     <h2>Selected Diseases</h2>
-                    {selectedDiseases.map((disease: IDisease) => (
+                    {selectedDiseases.map((disease) => (
                         <div key={disease._id}>
                             <h3>{disease.name}</h3>
                             <p>{disease.description}</p>

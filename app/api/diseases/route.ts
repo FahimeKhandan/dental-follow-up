@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
 import { Disease } from '@/lib/models/Disease';
+import { NextResponse } from 'next/server';
 
 export async function GET() {
     try {
